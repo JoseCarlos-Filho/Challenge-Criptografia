@@ -59,14 +59,15 @@ function encript(str) {
   return arrayEncriptada.join("");
 }
 
-function desencriptacao(desencriptada) {
+/* ---------------------> Faz a decript do input do usuário <--------------------- */
+function decript(str) {
   // const array = [];
   codigoVogais.filter((item) => {
-    if (desencriptada.includes(item.text)) {
-      desencriptada = desencriptada.replaceAll(item.text, item.id);
+    if (str.includes(item.text)) {
+      str = str.replaceAll(item.text, item.id);
     }
   });
-  return desencriptada;
+  return str;
 }
 inputEncriptar = inputEncriptar.toLocaleLowerCase();
 let noCaracterer = especialCharMask(inputEncriptar);
