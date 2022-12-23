@@ -22,9 +22,12 @@ const isInvalid = (input) => {
   return result;
 };
 
-// enviar.addEventListener("click", (e) => {
-//   const clico =
-// })
+/* ---------------------> encripta o texto chamando a função encript(input.value) <--------------------- */
+btnEncript.addEventListener("click", () => {
+  if (isInvalid(input.value))
+    alert("Letra maiúsculas e acentos não permitido!!!");
+  else resultado.innerHTML = encript(input.value);
+});
 
 let inputEncriptar = "A vida é belissíma!!!";
 const codigoVogais = [
