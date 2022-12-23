@@ -18,7 +18,6 @@ const isInvalid = (input) => {
   const result = [...input].some(
     (c) => reg.test(c) || regExpressao.test(c.normalize("NFD"))
   );
-  // log(isInvalid);
   return result;
 };
 
@@ -69,24 +68,3 @@ function decript(str) {
   });
   return str;
 }
-inputEncriptar = inputEncriptar.toLocaleLowerCase();
-let noCaracterer = especialCharMask(inputEncriptar);
-
-const palavraEncriptada = encriptar(noCaracterer);
-log(palavraEncriptada);
-const palavraDesencriptada = desencriptacao(palavraEncriptada);
-log(palavraDesencriptada);
-
-// let teste = "Parabéns para Você, Ótima ideia!?";
-// teste = teste.toLowerCase();
-// let result = especialCharMask(teste);
-// log(result);
-// teste = teste.toLowerCase();
-
-// teste = teste.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-// log(teste);
-
-// const secreta = desencriptacao(
-//   "pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!"
-// );
-// log(secreta);
