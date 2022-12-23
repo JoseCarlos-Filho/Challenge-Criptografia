@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/testes.js" defer></script>
+    <script src="./js/main.js" defer></script>
     <title>Encript Texto</title>
   </head>
   <body>
     <section class="container">
-      <h1>Encriptar texto</h1>
+      <!-- Titulo da aplicação -->
+      <h1>Codifique e decodifique o texto</h1>
+
+      <!-- input de textos -->
       <textarea
         class="input-encript"
         id="encript"
@@ -19,7 +22,14 @@
         rows="5"
         cols="50"
       ></textarea>
-      <button class="btn-encript">Encriptar</button>
+
+      <!-- botões encripta e decripta -->
+      <div class="botoes">
+        <button class="btn-encript">Encriptar</button>
+        <button class="btn-decript">Decriptar</button>
+      </div>
+
+      <!-- exibi resultado -->
       <div class="resultado"></div>
     </section>
   </body>
