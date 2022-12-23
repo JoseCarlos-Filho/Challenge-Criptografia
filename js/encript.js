@@ -4,9 +4,11 @@
 // A letra "o" é convertida para "ober"
 // A letra "u" é convertida para "ufat"
 
-// const encriptar = document.querySelector(".input-encript");
-// const enviar = document.querySelector(".btn-encript");
-// const resultado = document.querySelector(".resultado");
+/* ---------------------> input, output and actions <--------------------- */
+const input = document.querySelector(".input-encript");
+const btnEncript = document.querySelector(".btn-encript");
+const btnDecript = document.querySelector(".btn-decript");
+const resultado = document.querySelector(".resultado");
 
 /* ---------------------> Regras de validação <--------------------- */
 const isInvalid = (input) => {
