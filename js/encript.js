@@ -8,7 +8,23 @@
 // const enviar = document.querySelector(".btn-encript");
 // const resultado = document.querySelector(".resultado");
 
-let inputEncriptar = "TESTE ÔI PARA VOCÊ!?";
+/* ---------------------> Regras de validação <--------------------- */
+const isInvalid = (input) => {
+  const reg = /[A-Z]+/g;
+  const regExpressao = /[\u0300-\u036f]/g;
+
+  const result = [...input].some(
+    (c) => reg.test(c) || regExpressao.test(c.normalize("NFD"))
+  );
+  // log(isInvalid);
+  return result;
+};
+
+// enviar.addEventListener("click", (e) => {
+//   const clico =
+// })
+
+let inputEncriptar = "A vida é belissíma!!!";
 const codigoVogais = [
   { id: "a", text: "ai" },
   { id: "e", text: "enter" },
