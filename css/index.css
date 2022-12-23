@@ -21,10 +21,17 @@ textarea {
   margin: 1rem;
 }
 
-.btn-encript {
-  height: 30px;
-  width: 10%;
+.botoes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-encript,
+.btn-decript {
+  height: 35px;
+  width: 8rem;
   border-radius: 10px;
-  text-align: center;
   margin: 1rem;
+  text-align: center;
 }
