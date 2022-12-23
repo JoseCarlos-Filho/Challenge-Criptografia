@@ -45,39 +45,18 @@ const codigoVogais = [
   { id: "u", text: "ufat" },
 ];
 
-function especialCharMask(especialChar) {
-  especialChar = especialChar.replace(/[áàãâä]/gi, "a");
-  especialChar = especialChar.replace(/[éèêë]/gi, "e");
-  especialChar = especialChar.replace(/[íìîï]/gi, "i");
-  especialChar = especialChar.replace(/[óòõôö]/gi, "o");
-  especialChar = especialChar.replace(/[úùûü]/gi, "u");
-  especialChar = especialChar.replace(/[ç]/gi, "c");
-  especialChar = especialChar.replace(/[^a-z0-9]/gi, " ");
-  especialChar = especialChar.replace(/_+/, " ");
-  log(especialChar);
-  return especialChar;
-}
-
-const { log, dir } = console;
-
-function encriptar(texto) {
+/* ---------------------> Faz a encriptação do input do usuário <--------------------- */
+function encript(str) {
   const arrayEncriptada = [];
-  for (const i of texto) {
-    const codigo = codigoVogais.find((item) => {
-      if (item.id === i) {
-        return item.text;
-      }
-    });
-
-    if (codigo == undefined) {
-      arrayEncriptada.push(i);
-    } else {
+  for (const char of str) {
+    const codigo = codigoVogais.find((item) => item.id === char);
+    if (codigo) {
       arrayEncriptada.push(codigo.text);
+    } else {
+      arrayEncriptada.push(char);
     }
   }
-
-  const encriptada = arrayEncriptada.join("");
-  return encriptada;
+  return arrayEncriptada.join("");
 }
 
 function desencriptacao(desencriptada) {
