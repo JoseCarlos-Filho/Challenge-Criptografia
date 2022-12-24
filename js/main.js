@@ -8,6 +8,7 @@
 const input = document.querySelector(".input-encript");
 const btnEncript = document.querySelector(".btn-encript");
 const btnDecript = document.querySelector(".btn-decript");
+const btnCopiar = document.querySelector(".btn-copiar");
 const resultado = document.querySelector(".resultado");
 
 /* ---------------------> Regras de validação <--------------------- */
