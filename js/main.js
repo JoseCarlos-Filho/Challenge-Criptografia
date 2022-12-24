@@ -50,6 +50,13 @@ const codigoVogais = [
   { id: "u", text: "ufat" },
 ];
 
+/* ---------------------> realiza a cópia do texto <--------------------- */
+const copyToClipboardAsync = (str) => {
+  if (navigator && navigator.clipboard && navigator.clipboard.writeText)
+    return navigator.clipboard.writeText(str);
+  return Promise.reject("The Clipboard API is not available.");
+};
+
 /* ---------------------> Faz a encriptação do input do usuário <--------------------- */
 function encript(str) {
   const arrayEncriptada = [];
