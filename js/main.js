@@ -36,6 +36,11 @@ btnDecript.addEventListener("click", () => {
   else resultado.innerHTML = decript(input.value);
 });
 
+/* ---------------------> botão copiar acionado pelo evento de click  <--------------------- */
+btnCopiar.addEventListener("click", () => {
+  return copyToClipboardAsync(resultado.innerHTML);
+});
+
 /* ---------------------> array de objetos com as regras de decodificação <--------------------- */
 const codigoVogais = [
   { id: "a", text: "ai" },
