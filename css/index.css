@@ -35,3 +35,19 @@ textarea {
   margin: 1rem;
   text-align: center;
 }
+
+.resultado {
+  height: 200px;
+  width: 50%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.btn-copiar {
+  height: 35px;
+  width: 8rem;
+  border-radius: 10px;
+  margin: 1rem;
+  text-align: center;
+}
