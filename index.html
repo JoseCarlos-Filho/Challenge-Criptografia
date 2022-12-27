@@ -25,23 +25,26 @@
       <img class="logo-alura" src="./assets/logoAlura.svg" alt="logo Alura" />
     </header>
     <section class="container">
-      <!-- Titulo da aplicação -->
-      <h1>Codifique e decodifique o texto</h1>
-
-      <!-- input de textos -->
-      <textarea
-        class="input-encript"
-        id="encript"
-        name="encript"
-        placeholder="Digite o texto"
-        rows="5"
-        cols="50"
-      ></textarea>
-
-      <!-- botões encripta e decripta -->
-      <div class="botoes">
-        <button class="btn-encript">Encriptar</button>
-        <button class="btn-decript">Decriptar</button>
+      <div class="container-inputs">
+        <div class="input-area">
+          <textarea
+            class="input-textarea"
+            placeholder="digite o texto aqui"
+          ></textarea>
+        </div>
+        <div class="botoes">
+          <p class="informativo">
+            <img
+              class="img-exclamation"
+              src="./assets/exclamacao.svg"
+              alt="exclamação"
+            />Apenas letras minúsculas e sem acento.
+          </p>
+          <div class="btn-group">
+            <button class="btn btn-cripto">Criptografar</button>
+            <button class="btn btn-decripto">Descriptografar</button>
+          </div>
+        </div>
       </div>
 
       <!-- exibi resultado -->
