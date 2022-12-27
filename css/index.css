@@ -1,53 +1,123 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f3f5fc;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: 0px 40px 0px 40px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 18px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.container-inputs {
+  padding-right: 80px;
 }
 
-textarea {
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 0.5em;
-  margin: 1rem;
+.input-textarea {
+  border: none;
+  outline: none;
+  background: #f3f5fc;
+  color: #0a3871;
+  font-weight: 400;
+  font-size: 32px;
+  width: 680px;
+  height: 400px;
+  margin-top: -5rem;
 }
 
-.botoes {
+.input-textarea::placeholder {
+  color: #0a3871;
+}
+
+.informativo {
+  margin: 10px;
+}
+
+.img-exclamation {
+  margin-right: 10px;
+}
+
+.btn-group {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  gap: 8px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-right: 24px;
+}
+
+.btn-cripto {
+  background: #0a3871;
+  color: #ffffff;
+}
+
+.btn-decripto,
+.btn-copiar {
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+}
+
+.input-saida {
+  width: 400px;
+  height: 650px;
+  background: #ffffff;
+
+  position: relative;
+  top: -80px;
+
+  border: 1px solid #0a3871;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.btn-encript,
-.btn-decript {
-  height: 35px;
-  width: 8rem;
-  border-radius: 10px;
-  margin: 1rem;
-  text-align: center;
-}
-
-.resultado {
+.input-saida textarea {
+  width: 350px;
   height: 200px;
-  width: 50%;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 1rem;
+
+  font-weight: 400;
+  font-size: 24px;
+  border: none;
+  outline: none;
 }
 
-.btn-copiar {
-  height: 35px;
-  width: 8rem;
-  border-radius: 10px;
-  margin: 1rem;
+.input-saida img {
+  margin: 10px;
+}
+
+.input-saida h2 {
+  font-weight: 700;
+  font-size: 24px;
   text-align: center;
+  padding: 10px;
+  color: #343a40;
+}
+
+.input-saida p {
+  text-align: center;
+  padding: 40px;
+}
+
+.input-saida button {
+  text-align: center;
+}
+
+.visivel {
+  display: none;
 }
