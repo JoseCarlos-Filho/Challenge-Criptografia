@@ -5,9 +5,9 @@
 // A letra "u" é convertida para "ufat"
 
 /* ---------------------> input, output and actions <--------------------- */
-const input = document.querySelector(".input-encript");
-const btnEncript = document.querySelector(".btn-encript");
-const btnDecript = document.querySelector(".btn-decript");
+const input = document.querySelector(".input-textarea");
+const btnEncript = document.querySelector(".btn-cripto");
+const btnDecript = document.querySelector(".btn-decripto");
 const btnCopiar = document.querySelector(".btn-copiar");
 const resultado = document.querySelector(".resultado");
 
