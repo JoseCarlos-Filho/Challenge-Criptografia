@@ -10,6 +10,7 @@ const btnEncript = document.querySelector(".btn-cripto");
 const btnDecript = document.querySelector(".btn-decripto");
 const btnCopiar = document.querySelector(".btn-copiar");
 const resultado = document.querySelector(".resultado");
+const visibilities = document.querySelector(".bloco-output");
 
 /* ---------------------> Regras de validação <--------------------- */
 const isInvalid = (input) => {
@@ -22,18 +23,30 @@ const isInvalid = (input) => {
   return result;
 };
 
+const exibiInputSaida = () => {
+  visibilities.classList.add("invisivel");
+  resultado.classList.remove("invisivel");
+  btnCopiar.classList.remove("invisivel");
+};
+
 /* ---------------------> encripta o texto chamando a função encript(input.value) <--------------------- */
 btnEncript.addEventListener("click", () => {
   if (isInvalid(input.value))
     alert("Letra maiúsculas e acentos não permitido!!!");
-  else resultado.innerHTML = encript(input.value);
+  else {
+    resultado.innerHTML = encript(input.value);
+    exibiInputSaida();
+  }
 });
 
 /* ---------------------> decripta o texto chamando a função decript(input.value) <--------------------- */
 btnDecript.addEventListener("click", () => {
   if (isInvalid(input.value))
     alert("Letra maiúsculas e acentos não permitido!!!");
-  else resultado.innerHTML = decript(input.value);
+  else {
+    resultado.innerHTML = decript(input.value);
+    exibiInputSaida();
+  }
 });
 
 /* ---------------------> botão copiar acionado pelo evento de click  <--------------------- */
