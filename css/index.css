@@ -11,7 +11,7 @@ body {
 }
 
 .container-inputs {
-  padding-right: 80px;
+  padding-right: 5rem;
 }
 
 .input-textarea {
@@ -20,9 +20,10 @@ body {
   background: #f3f5fc;
   color: #0a3871;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
   width: 680px;
   height: 400px;
+  resize: none;
   margin-top: -5rem;
 }
 
@@ -44,78 +45,111 @@ body {
 }
 
 .btn {
-  width: 328px;
-  height: 67px;
+  width: 20rem;
+  height: 4.5rem;
   border-radius: 24px;
   gap: 8px;
-  font-family: "Inter";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
   text-align: center;
-  margin-right: 24px;
+  margin-right: 1.5rem;
+  cursor: pointer;
 }
 
 .btn-cripto {
   background: #0a3871;
   color: #ffffff;
+  transition: 0.5s ease-out;
+}
+
+.btn-cripto:hover {
+  background: #052051;
+  transform: scale(1.1);
 }
 
 .btn-decripto,
 .btn-copiar {
-  background: #d8dfe8;
+  background: #eff1fa;
   border: 1px solid #0a3871;
   color: #0a3871;
+  transition: 0.5s ease-out;
 }
 
-.input-saida {
-  width: 400px;
-  height: 650px;
+.btn-decripto:hover,
+.btn-copiar:hover {
+  background: #aab2d5;
+  transform: scale(1.1);
+}
+
+.btn-copiar {
+  width: 20rem;
+  height: 4.5rem;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.output {
+  width: 27.78vw;
+  height: 92.18vh;
   background: #ffffff;
 
   position: relative;
-  top: -80px;
+  top: -6rem;
 
-  border: 1px solid #0a3871;
-  border-radius: 10px;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.input-saida textarea {
-  width: 350px;
-  height: 200px;
-
+.resultado {
+  width: 84%;
+  height: 82%;
   font-weight: 400;
-  font-size: 24px;
-  border: none;
-  outline: none;
+  font-size: 1.5rem;
+  overflow: auto;
+  text-align: left;
+  margin: 1rem 1rem 0.5rem 1rem;
 }
 
-.input-saida img {
-  margin: 10px;
+.bloco-output {
+  margin-top: 10rem;
 }
 
-.input-saida h2 {
+.img-codigo {
+  width: 84%;
+  height: 52.2%;
+  margin-left: 2rem;
+}
+
+.bloco-output h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 10px;
   color: #343a40;
+  padding: 2rem 3rem 0 3rem;
 }
 
-.input-saida p {
+.bloco-output p {
   text-align: center;
-  padding: 40px;
+  padding: 2rem 3rem 0 3rem;
+  color: #495057;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
-.input-saida button {
+.btn-copiar {
   text-align: center;
 }
 
-.visivel {
+.invisivel {
   display: none;
 }
