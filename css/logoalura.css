@@ -1,0 +1,16 @@
+.logo-alura {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  margin: 2.5rem 0rem 2.5rem 0rem;
+  animation: rotacionar 2s infinite;
+}
+
+@keyframes rotacionar {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
