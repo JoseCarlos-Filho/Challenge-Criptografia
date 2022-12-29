@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 40px 0px 40px;
+}
+
+.container-inputs {
+  padding-right: 5rem;
+}
+
+.input-textarea {
+  border: none;
+  outline: none;
+  background: #f3f5fc;
+  color: #0a3871;
+  font-weight: 400;
+  font-size: 2rem;
+  width: 680px;
+  height: 400px;
+  resize: none;
+  margin-top: -5rem;
+}
+
+.input-textarea::placeholder {
+  color: #0a3871;
+}
