@@ -1,0 +1,90 @@
+@media screen and (max-width: 768px) {
+  .logo-alura {
+    padding: 0;
+    margin: 2.5rem 0rem 2rem 0.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .input-textarea {
+    margin-top: 2rem;
+    margin-left: 7rem;
+    height: 50vh;
+  }
+
+  .botoes {
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-group {
+    justify-content: center;
+  }
+
+  .output {
+    width: 90%;
+    height: 50%;
+    position: inherit;
+    margin: 2rem 0rem 2rem 0rem;
+  }
+  .resultado {
+    height: 25vh;
+  }
+
+  .bloco-output {
+    margin-top: 1.5rem;
+  }
+
+  .img-codigo {
+    display: none;
+  }
+
+  .bloco-output h2 {
+    padding: 0;
+  }
+
+  .bloco-output p {
+    padding: 1rem;
+  }
+
+  .btn-copiar {
+    margin-bottom: 2rem;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .input-textarea {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 0.5rem;
+  }
+
+  .botoes {
+    margin: 0rem 0rem 0rem 1.5rem;
+  }
+
+  .informativo {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  output {
+    margin-right: 5rem;
+  }
+}
