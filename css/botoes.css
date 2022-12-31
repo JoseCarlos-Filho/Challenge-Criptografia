@@ -31,7 +31,7 @@
 
 .btn-cripto:hover {
   background: #052051;
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .btn-decripto,
@@ -45,7 +45,7 @@
 .btn-decripto:hover,
 .btn-copiar:hover {
   background: #aab2d5;
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .btn-copiar {
