@@ -26,16 +26,14 @@
 
   .output {
     width: 90%;
-    height: 50%;
-    position: inherit;
+    height: 50vh;
+    left: 0.5%;
+    top: 5%;
+
     margin: 2rem 0rem 2rem 0rem;
   }
   .resultado {
-    height: 25vh;
-  }
-
-  .bloco-output {
-    margin-top: 1.5rem;
+    height: 30vh;
   }
 
   .img-codigo {
@@ -84,7 +82,7 @@
     gap: 1rem;
   }
 
-  output {
+  .output {
     margin-right: 5rem;
   }
 }
