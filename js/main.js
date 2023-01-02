@@ -73,6 +73,8 @@ const isInvalid = (input) => {
   return result;
 };
 
+/* ---------------------> visibilidade do output  <--------------------- */
+
 const exibiInputSaida = () => {
   visibilities.classList.add("invisivel");
   resultado.classList.remove("invisivel");
