@@ -12,6 +12,55 @@ const btnDecript = document.querySelector(".btn-decripto");
 const btnCopiar = document.querySelector(".btn-copiar");
 const resultado = document.querySelector(".resultado");
 const visibilities = document.querySelector(".bloco-output");
+const closeModal = document.querySelector(".close-modal");
+const modal = document.querySelector(".modal");
+const fade = document.querySelector(".fade");
+
+/* ---------------------> array de objetos com as regras de decodificação <--------------------- */
+const codigoVogais = [
+  { id: "a", text: "ai" },
+  { id: "e", text: "enter" },
+  { id: "i", text: "imes" },
+  { id: "o", text: "ober" },
+  { id: "u", text: "ufat" },
+];
+
+/* ---------------------> Função com as ações funcionais da aplicação <--------------------- */
+const acoesAplicacao = container.addEventListener("click", (evento) => {
+  const elTarget = evento.target;
+  if (elTarget.className.includes("btn-cripto")) {
+    console.log("clico!");
+    (isInvalid(input.value) || input.value === "") && toggleModal();
+    resultado.innerHTML = encript(input.value);
+    exibiInputSaida();
+  }
+
+  if (elTarget.className.includes("btn-decripto")) {
+    console.log("clico!");
+    (isInvalid(input.value) || input.value === "") && toggleModal();
+    resultado.innerHTML = decript(input.value);
+    exibiInputSaida();
+  }
+
+  if (elTarget.className.includes("close-modal")) {
+    console.log("clico!");
+    toggleModal();
+  }
+
+  if (elTarget.className.includes("btn-copiar")) {
+    console.log("clico!");
+    copyToClipboardAsync(resultado.innerHTML);
+    // resultado.innerHTML = "";
+  }
+});
+
+/* ---------------------> Mostra Modal de Mensagens <--------------------- */
+
+const toggleModal = () => {
+  // forma resumida.
+  resultado.innerHTML = "";
+  [modal, fade].forEach((el) => el.classList.toggle("hide"));
+};
 
 /* ---------------------> Regras de validação <--------------------- */
 const isInvalid = (input) => {
