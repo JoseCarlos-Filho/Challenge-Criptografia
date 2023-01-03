@@ -25,6 +25,13 @@ const codigoVogais = [
   { id: "u", text: "ufat" },
 ];
 
+/* ---------------------> Função carrega page <--------------------- */
+
+window.onload = setInterval(() => {
+  document.querySelector(".loading").classList.add("esconde");
+  document.querySelector(".conteudo").classList.remove("esconde");
+}, 5000);
+
 /* ---------------------> Função com as ações funcionais da aplicação <--------------------- */
 const acoesAplicacao = container.addEventListener("click", (evento) => {
   const elTarget = evento.target;
