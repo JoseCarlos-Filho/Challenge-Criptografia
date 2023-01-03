@@ -20,6 +20,7 @@
   height: 400px;
   resize: none;
   margin-top: -5rem;
+  text-align: left;
 }
 
 .input-textarea::placeholder {
