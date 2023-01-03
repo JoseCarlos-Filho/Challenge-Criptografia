@@ -36,29 +36,21 @@ window.onload = setInterval(() => {
 container.addEventListener("click", (evento) => {
   const elTarget = evento.target;
   if (elTarget.className.includes("btn-cripto")) {
-    console.log("clico!");
     (isInvalid(input.value) || input.value === "") && fechaModal();
     resultado.innerHTML = encript(input.value);
     exibiInputSaida();
   }
 
   if (elTarget.className.includes("btn-decripto")) {
-    console.log("clico!");
     (isInvalid(input.value) || input.value === "") && fechaModal();
     resultado.innerHTML = decript(input.value);
     exibiInputSaida();
   }
 
-  if (elTarget.className.includes("close-modal")) {
-    console.log("clico!");
-    fechaModal();
-  }
+  if (elTarget.className.includes("close-modal")) fechaModal();
 
-  if (elTarget.className.includes("btn-copiar")) {
-    console.log("clico!");
+  if (elTarget.className.includes("btn-copiar"))
     copiaParaAreaDeTranferencia(resultado.innerHTML);
-    // resultado.innerHTML = "";
-  }
 });
 
 /* ---------------------> Mostra Modal de Mensagens <--------------------- */
@@ -111,7 +103,6 @@ function encript(str) {
 
 /* ---------------------> Faz a decript do input do usuário <--------------------- */
 function decript(str) {
-  // const array = [];
   codigoVogais.filter((item) => {
     if (str.includes(item.text)) {
       str = str.replaceAll(item.text, item.id);
