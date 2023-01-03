@@ -33,37 +33,37 @@ window.onload = setInterval(() => {
 }, 5000);
 
 /* ---------------------> Função com as ações funcionais da aplicação <--------------------- */
-const acoesAplicacao = container.addEventListener("click", (evento) => {
+container.addEventListener("click", (evento) => {
   const elTarget = evento.target;
   if (elTarget.className.includes("btn-cripto")) {
     console.log("clico!");
-    (isInvalid(input.value) || input.value === "") && toggleModal();
+    (isInvalid(input.value) || input.value === "") && fechaModal();
     resultado.innerHTML = encript(input.value);
     exibiInputSaida();
   }
 
   if (elTarget.className.includes("btn-decripto")) {
     console.log("clico!");
-    (isInvalid(input.value) || input.value === "") && toggleModal();
+    (isInvalid(input.value) || input.value === "") && fechaModal();
     resultado.innerHTML = decript(input.value);
     exibiInputSaida();
   }
 
   if (elTarget.className.includes("close-modal")) {
     console.log("clico!");
-    toggleModal();
+    fechaModal();
   }
 
   if (elTarget.className.includes("btn-copiar")) {
     console.log("clico!");
-    copyToClipboardAsync(resultado.innerHTML);
+    copiaParaAreaDeTranferencia(resultado.innerHTML);
     // resultado.innerHTML = "";
   }
 });
 
 /* ---------------------> Mostra Modal de Mensagens <--------------------- */
 
-const toggleModal = () => {
+const fechaModal = () => {
   // forma resumida.
   resultado.innerHTML = "";
   [modal, fade].forEach((el) => el.classList.toggle("hide"));
