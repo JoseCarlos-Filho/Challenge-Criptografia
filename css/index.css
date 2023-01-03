@@ -4,6 +4,8 @@
 @import "inputs.css";
 @import "botoes.css";
 @import "output.css";
+@import "modal.css";
+@import "loading.css";
 
 /* ---------------------> responsividade midia queries <--------------------- */
 @import "mediaquiries.css";
