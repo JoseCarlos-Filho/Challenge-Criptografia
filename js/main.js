@@ -88,42 +88,8 @@ const exibiInputSaida = () => {
   btnCopiar.classList.remove("invisivel");
 };
 
-/* ---------------------> encripta o texto chamando a função encript(input.value) <--------------------- */
-btnEncript.addEventListener("click", () => {
-  if (isInvalid(input.value))
-    alert("Letra maiúsculas e acentos não permitido!!!");
-  else {
-    resultado.innerHTML = encript(input.value);
-    exibiInputSaida();
-  }
-});
-
-/* ---------------------> decripta o texto chamando a função decript(input.value) <--------------------- */
-btnDecript.addEventListener("click", () => {
-  if (isInvalid(input.value))
-    alert("Letra maiúsculas e acentos não permitido!!!");
-  else {
-    resultado.innerHTML = decript(input.value);
-    exibiInputSaida();
-  }
-});
-
-/* ---------------------> botão copiar acionado pelo evento de click  <--------------------- */
-btnCopiar.addEventListener("click", () => {
-  return copyToClipboardAsync(resultado.innerHTML);
-});
-
-/* ---------------------> array de objetos com as regras de decodificação <--------------------- */
-const codigoVogais = [
-  { id: "a", text: "ai" },
-  { id: "e", text: "enter" },
-  { id: "i", text: "imes" },
-  { id: "o", text: "ober" },
-  { id: "u", text: "ufat" },
-];
-
 /* ---------------------> realiza a cópia do texto <--------------------- */
-const copyToClipboardAsync = (str) => {
+const copiaParaAreaDeTranferencia = (str) => {
   if (navigator && navigator.clipboard && navigator.clipboard.writeText)
     return navigator.clipboard.writeText(str);
   return Promise.reject("The Clipboard API is not available.");
