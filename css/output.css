@@ -20,7 +20,7 @@
   height: 82%;
   font-weight: 400;
   font-size: 1.5rem;
-  overflow: auto;
+  overflow-wrap: break-word;
   text-align: left;
   margin: 2rem 1rem 0.5rem 1rem;
 }
