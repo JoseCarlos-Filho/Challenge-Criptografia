@@ -16,6 +16,7 @@
     />
 
     <script src="./js/main.js" defer></script>
+    <!-- <script src="./js/test.js" defer></script> -->
     <title>Codificador de Texto</title>
   </head>
   <body>
@@ -41,49 +42,51 @@
     </section>
 
     <!-- Aplicação da page -->
-    <section class="conteudo esconde">
+    <main class="conteudo esconde">
       <img class="logo-alura" src="./assets/logoAlura.svg" alt="logo Alura" />
-    <section class="container">
-      <div class="container-inputs">
-        <div class="input-area">
-          <textarea
-            class="input-textarea"
-            placeholder="digite seu texto"
-          ></textarea>
-        </div>
-        <div class="botoes">
-          <p class="informativo">
-            <img
-              class="img-exclamation"
-              src="./assets/exclamacao.svg"
-              alt="Icone exclamação"
-            />Apenas letras minúsculas e sem acento.
-          </p>
-          <div class="btn-group">
-            <button class="btn btn-cripto">Criptografar</button>
-            <button class="btn btn-decripto">Descriptografar</button>
+      <!-- Corpo principal -->
+      <section class="container">
+        <div class="container-inputs">
+          <div class="input-area">
+            <textarea
+              class="input-textarea"
+              placeholder="digite seu texto"
+            ></textarea>
+          </div>
+          <!-- Elementos de ações e informação da page -->
+          <div class="botoes">
+            <p class="informativo">
+              <img
+                class="img-exclamation"
+                src="./assets/exclamacao.svg"
+                alt="Icone exclamação"
+              />Apenas letras minúsculas e sem acento.
+            </p>
+            <!-- botões criptográfia e descriptográfia -->
+            <div class="btn-group">
+              <button class="btn btn-cripto">Criptografar</button>
+              <button class="btn btn-decripto">Descriptografar</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="output">
-        <span class="resultado invisivel" placeholder="Resultado"></span>
+        <!-- Elementos de output da page -->
+        <div class="output">
+          <span class="resultado invisivel" placeholder="Resultado"></span>
+          <div class="bloco-output">
+            <img
+              class="img-codigo"
+              src="./assets/logoSearch.svg"
+              alt="Imagem verificando criptografia"
+            />
+            <h2>Nenhuma mensagem encontrada</h2>
+            <p>
+              Digite um texto que você deseja criptografar ou descriptografar.
+            </p>
+          </div>
 
-        <div class="bloco-output">
-          <img
-            class="img-codigo"
-            src="./assets/logoSearch.svg"
-            alt="Imagem verificando criptografia"
-          />
-          <h2>Nenhuma mensagem encontrada</h2>
-          <p>
-            Digite um texto que você deseja criptografar ou descriptografar.
-          </p>
+          <button class="btn-copiar invisivel">Copiar</button>
         </div>
-
-        <button class="btn-copiar invisivel">Copiar</button>
-      </div>
-    </section>
 
         <!-- Modal de mensagem ao usuário -->
         <div class="fade hide"></div>
@@ -101,5 +104,7 @@
             </p>
           </div>
         </div>
+      </section>
+    </main>
   </body>
 </html>
