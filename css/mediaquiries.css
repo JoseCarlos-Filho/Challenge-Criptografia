@@ -95,4 +95,8 @@
   .output {
     margin: 2rem 0;
   }
+
+  .modal {
+    max-width: 80%;
+  }
 }
