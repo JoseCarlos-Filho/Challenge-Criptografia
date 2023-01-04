@@ -10,19 +10,27 @@
     margin: 0 auto;
   }
 
+  .container-inputs {
+    width: 768px;
+    padding: 0;
+  }
+
   .input-textarea {
     margin-top: 2rem;
-    margin-left: 7rem;
+    margin: 2rem;
     height: 50vh;
   }
 
-  .botoes {
-    margin-left: 7rem;
-    margin-bottom: 1rem;
+  .botoes p {
+    margin-left: 3rem;
   }
 
   .btn-group {
     justify-content: center;
+  }
+
+  .btn-decripto {
+    margin-right: 0;
   }
 
   .output {
@@ -59,8 +67,7 @@
   .container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    width: 375px;
+    margin: 0;
   }
 
   .container-inputs {
