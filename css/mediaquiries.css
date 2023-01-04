@@ -72,7 +72,6 @@
     width: auto;
     text-align: center;
     margin: 0;
-    /* margin-left: 0.5rem; */
   }
 
   .botoes {
@@ -89,7 +88,11 @@
     gap: 1rem;
   }
 
+  .btn {
+    margin-right: 0;
+  }
+
   .output {
-    margin-right: 5rem;
+    margin-right: 0;
   }
 }
