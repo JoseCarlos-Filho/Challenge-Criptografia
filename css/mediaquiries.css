@@ -62,15 +62,21 @@
     margin: 0 auto;
   }
 
-  .input-textarea {
-    width: 100%;
-    text-align: center;
+  .container-inputs {
+    width: 370px;
+    padding: 0;
     margin: 0 auto;
-    margin-left: 0.5rem;
+  }
+
+  .input-textarea {
+    width: auto;
+    text-align: center;
+    margin: 0;
+    /* margin-left: 0.5rem; */
   }
 
   .botoes {
-    margin: 0rem 0rem 0rem 1.5rem;
+    margin: 0;
   }
 
   .informativo {
