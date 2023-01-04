@@ -60,6 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    width: 375px;
   }
 
   .container-inputs {
@@ -94,6 +95,7 @@
 
   .output {
     margin: 2rem 0;
+    left: 0px;
   }
 
   .modal {
